@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t3">
+  <title id="t3">Placeholder photo of a consultation room — replace with an actual photograph</title>
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f3f2"/><stop offset="1" stop-color="#d3ece9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g3)"/>
+  <rect x="0" y="440" width="800" height="160" fill="#dcefec"/>
+  <!-- exam table -->
+  <rect x="260" y="360" width="280" height="60" rx="12" fill="#ffffff" stroke="#c3ddd9" stroke-width="2"/>
+  <rect x="260" y="345" width="70" height="30" rx="10" fill="#ffffff" stroke="#c3ddd9" stroke-width="2"/>
+  <!-- desk with monitor -->
+  <rect x="560" y="330" width="130" height="90" fill="#ffffff" stroke="#c3ddd9" stroke-width="2"/>
+  <rect x="590" y="290" width="70" height="46" rx="4" fill="#163a5f"/>
+  <rect x="596" y="296" width="58" height="30" fill="#cfe9e6"/>
+  <!-- stethoscope icon -->
+  <path d="M150 330c0 40 16 66 60 66s60-26 60-66" fill="none" stroke="#0f6e6a" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="150" cy="322" r="9" fill="#0f6e6a"/>
+  <circle cx="270" cy="322" r="9" fill="#0f6e6a"/>
+  <circle cx="210" cy="418" r="15" fill="#0f6e6a"/>
+  <g transform="translate(340,505)">
+    <rect x="-100" y="0" width="200" height="40" rx="20" fill="#ffffff" opacity="0.9"/>
+    <text x="0" y="26" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#163a5f">Consultation Room</text>
+  </g>
+</svg>

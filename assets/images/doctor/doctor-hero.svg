@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Placeholder illustration of the doctor — replace with an actual photograph</title>
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f3f2"/>
+      <stop offset="1" stop-color="#cfe9e6"/>
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef4f3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1000" fill="url(#heroBg)"/>
+  <circle cx="150" cy="140" r="90" fill="#ffffff" opacity="0.35"/>
+  <circle cx="770" cy="860" r="130" fill="#ffffff" opacity="0.3"/>
+  <circle cx="800" cy="150" r="46" fill="#b8912b" opacity="0.18"/>
+
+  <!-- shoulders / coat -->
+  <path d="M180 980c0-180 120-300 270-300s270 120 270 300z" fill="url(#coatGrad)" stroke="#d7e4e2" stroke-width="2"/>
+  <!-- collar -->
+  <path d="M400 700l50 60 50-60" fill="none" stroke="#0f6e6a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- scrub undershirt -->
+  <path d="M330 720c40 30 200 30 240 0l10 80c-80 26-180 26-260 0z" fill="#0f6e6a"/>
+
+  <!-- neck -->
+  <rect x="415" y="600" width="70" height="90" rx="30" fill="#e7b895"/>
+  <!-- head -->
+  <circle cx="450" cy="520" r="120" fill="#f2c9a3"/>
+  <!-- hair -->
+  <path d="M335 500c-6-90 60-150 115-150s121 60 115 150c-10-40-50-55-115-55s-105 15-115 55z" fill="#3a2c22"/>
+  <!-- simple face detail -->
+  <circle cx="410" cy="520" r="7" fill="#22303c"/>
+  <circle cx="490" cy="520" r="7" fill="#22303c"/>
+  <path d="M415 565c15 14 55 14 70 0" fill="none" stroke="#8a5a3d" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- stethoscope -->
+  <path d="M360 760c0 60 20 100 90 100s90-40 90-100" fill="none" stroke="#163a5f" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="360" cy="750" r="12" fill="#163a5f"/>
+  <circle cx="540" cy="750" r="12" fill="#163a5f"/>
+  <circle cx="450" cy="875" r="22" fill="#163a5f"/>
+
+  <!-- id badge -->
+  <rect x="330" y="750" width="46" height="60" rx="8" fill="#ffffff" stroke="#0f6e6a" stroke-width="3"/>
+  <circle cx="353" cy="770" r="8" fill="#0f6e6a"/>
+  <rect x="341" y="786" width="24" height="5" rx="2.5" fill="#b8c7cf"/>
+</svg>

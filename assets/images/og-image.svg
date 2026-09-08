@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <title>Sunrise Multispecialty Clinic — replace with a branded 1200x630 JPG/PNG for social sharing</title>
+  <defs>
+    <linearGradient id="ogbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b4f4c"/><stop offset="1" stop-color="#0f6e6a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <circle cx="1050" cy="120" r="140" fill="#ffffff" opacity="0.06"/>
+  <circle cx="120" cy="560" r="180" fill="#ffffff" opacity="0.06"/>
+  <g transform="translate(120,120)">
+    <circle cx="40" cy="40" r="40" fill="#ffffff"/>
+    <path d="M40 20a4 4 0 0 1 4 4v12h12a4 4 0 0 1 0 8H44v12a4 4 0 0 1-8 0V44H24a4 4 0 0 1 0-8h12V24a4 4 0 0 1 4-4z" fill="#0f6e6a"/>
+  </g>
+  <text x="120" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Sunrise Multispecialty Clinic</text>
+  <text x="120" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#cfe9e6">Dr. Ananya Sharma — General Physician &amp; Family Medicine</text>
+  <text x="120" y="400" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#b8912b" font-weight="700">Chechar, Bihar</text>
+</svg>

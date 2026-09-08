@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t5">
+  <title id="t5">Placeholder photo of medical equipment — replace with an actual photograph</title>
+  <defs>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f3f2"/><stop offset="1" stop-color="#cfe9e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g5)"/>
+  <rect x="0" y="440" width="800" height="160" fill="#dcefec"/>
+  <!-- monitor cart -->
+  <rect x="330" y="240" width="140" height="100" rx="8" fill="#163a5f"/>
+  <rect x="344" y="252" width="112" height="60" fill="#0f6e6a"/>
+  <polyline points="352,290 372,270 392,296 412,262 432,282 448,272" fill="none" stroke="#8fe3d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="380" y="340" width="40" height="80" fill="#8a97a0"/>
+  <rect x="330" y="418" width="140" height="14" rx="7" fill="#5b6b75"/>
+  <circle cx="350" cy="440" r="12" fill="#22303c"/>
+  <circle cx="450" cy="440" r="12" fill="#22303c"/>
+  <!-- oxygen tank -->
+  <rect x="560" y="300" width="46" height="140" rx="20" fill="#0f6e6a"/>
+  <rect x="573" y="280" width="20" height="24" fill="#b8912b"/>
+  <g transform="translate(340,505)">
+    <rect x="-104" y="0" width="208" height="40" rx="20" fill="#ffffff" opacity="0.9"/>
+    <text x="0" y="26" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#163a5f">Medical Equipment</text>
+  </g>
+</svg>
