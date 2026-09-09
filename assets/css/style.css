@@ -1,5 +1,5 @@
 /*
-  Sunrise Multispecialty Clinic — Design System
+  Khushi Hospital & Laparoscopy Centre — Design System
   ------------------------------------------------
   Sections:
   1. Design Tokens (colors, spacing, type)
@@ -433,6 +433,7 @@ input, select, textarea{ font-family: inherit; font-size: 1rem; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  max-width: 100%;
   background: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-weight: 700;
@@ -470,7 +471,10 @@ input, select, textarea{ font-family: inherit; font-size: 1rem; }
 .hero-badge{
   position: absolute;
   left: 22px;
+  right: 22px;
   bottom: 22px;
+  width: max-content;
+  max-width: calc(100% - 44px);
   background: #fff;
   border-radius: var(--radius-md);
   padding: 14px 18px;
