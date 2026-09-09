@@ -1,15 +1,17 @@
-# Sunrise Multispecialty Clinic & Nursing Home — Website
+# Khushi Hospital & Laparoscopy Centre — Website
 
-A modern, responsive static website for a doctor / clinic / nursing home. Built with plain HTML5, CSS3 and vanilla JavaScript — no build step, no backend, no dependencies to install. Ready to deploy to GitHub Pages, Netlify, Vercel, or any static host.
+A modern, responsive static website for Khushi Hospital & Laparoscopy Centre, Dalsinghsarai (Samastipur), Bihar. Built with plain HTML5, CSS3 and vanilla JavaScript — no build step, no backend, no dependencies to install. Deployed via GitHub Pages at `https://niord-pharma.github.io/khushi-hospital/`.
+
+> **Content status:** the site has been populated with the hospital's real name, registration number (100/22 (R)), address, phone numbers (+91 99342 55831, +91 70046 99355), doctors and staff, 24/7 emergency, and Ayushman Bharat (PM-JAY) empanelment. Items still needing the hospital's input are marked in-page with `[square-bracket]` notes or a `To Confirm` tag — see the checklist below.
 
 ## What's Included
 
-- 8 pages: Home, About Doctor, Services, Facilities (with photo gallery + lightbox), Contact/Appointment, FAQ, Privacy Policy, Terms & Conditions
+- 8 pages: Home, About Us, Services, Facilities (with photo gallery + lightbox), Contact/Appointment, FAQ, Privacy Policy, Terms & Conditions
 - A shared design system (`assets/css/style.css`) — colors, type, buttons, cards, forms, accordion, gallery/lightbox, footer, all fully responsive
 - Vanilla JS (`assets/js/main.js`) — mobile nav, sticky header, scroll reveal animations, back-to-top, FAQ accordion, gallery lightbox, appointment form validation
 - Frontend-only appointment enquiry form with validation and a confirmation message
 - Consistent-style SVG placeholder illustrations for the doctor and clinic photos/gallery (see [Replacing Images](#replacing-images))
-- SEO: unique titles/descriptions per page, Open Graph tags, canonical URL placeholders, semantic HTML, `Schema.org` JSON-LD (`MedicalClinic`, `Physician`, `FAQPage`)
+- SEO: unique titles/descriptions per page, Open Graph tags, canonical URLs, semantic HTML, `Schema.org` JSON-LD (`Hospital`, `Physician`, `FAQPage`, `BreadcrumbList`)
 - Mobile sticky Call / WhatsApp / Appointment bar, plus a floating back-to-top button
 - Accessible: skip link, labeled form fields, keyboard-operable nav/accordion/lightbox, visible focus states, `aria-*` attributes
 
@@ -20,7 +22,7 @@ Every page is a flat `.html` file at the project root, so the site can be opened
 ```text
 ClinicWebsite/
 ├── index.html         Home            → /index.html
-├── about.html         About Doctor    → /about.html
+├── about.html         About Us        → /about.html
 ├── services.html      Services        → /services.html
 ├── facilities.html    Facilities      → /facilities.html
 ├── contact.html       Contact         → /contact.html
@@ -61,24 +63,23 @@ npx serve .
 
 Then visit `http://localhost:8080`.
 
-## Customization Checklist
+## Still To Do (needs the hospital's input)
 
-All placeholder content uses square brackets (`[Clinic Address]`), `XXXXX` phone digits, or an `<em>` note — search each HTML file for these to find what to replace. Every page repeats the same header/footer markup (no templating engine is used), so most global changes need to be made **once per file** — a simple project-wide find & replace works well for values like the clinic name, phone number, and address.
+Search the HTML files for `[` (square-bracket notes) and `To Confirm` to find every spot. The hospital name, registration number, address, phone numbers, doctors/staff, hours and Ayushman empanelment are already filled in.
 
-1. **Clinic identity** — replace "Sunrise Multispecialty Clinic & Nursing Home" with the real clinic name across all HTML files (`<title>`, header logo text, footer, JSON-LD `name` fields).
-2. **Doctor details** — update name, qualifications (MBBS/MD/etc.), specialization, registration number, years of experience, and biography in `index.html` and `about.html`.
-3. **Contact details** — replace every instance of:
-   - `+91XXXXXXXXXX` (used in `tel:`/`wa.me` links) and `+91 XXXXX XXXXX` (displayed text)
-   - `example@clinic.com`
-   - `[Clinic Address]` / `[Clinic Address Line 1]`
-   - Working hours in the footer, Contact page, and FAQ page
-4. **Google Maps** — in `contact.html`, replace the `<iframe src="...">` URL with your clinic's actual Google Maps embed link (Google Maps → Share → Embed a map → copy the `src` URL).
-5. **Services & Facilities** — edit the cards in `services.html` and `facilities.html` to reflect what the clinic actually offers. Remove any facility card that doesn't apply, or replace its "To Confirm" tag once verified.
-6. **Structured data (JSON-LD)** — each page has one or more `<script type="application/ld+json">` blocks in `<head>` (including a `BreadcrumbList` on every inner page). Update the address, phone, geo-coordinates and physician details so search engines show accurate local info. Do not add unverified credentials, awards, or claims.
-7. **Canonical & Open Graph URLs** — replace `https://www.example-clinic.com/...` with your real domain once deployed. This appears in: every page's `<link rel="canonical">`, `og:url`, and the JSON-LD `url`/`item` fields — **and** in `robots.txt` (`Sitemap:` line) and every `<loc>` in `sitemap.xml`.
-8. **Social profile links** — the JSON-LD `sameAs` array in `index.html` and `contact.html` has `[your-page]` placeholders for Facebook/Instagram — fill in real profile URLs or delete the array entirely if the clinic has none.
-9. **Appointment form backend** — the form in `contact.html` (`#appointmentForm`) is frontend-only. In `assets/js/main.js`, inside `initAppointmentForm()`, replace the `// TODO (developer)` block with a real submission call (e.g. `fetch()` to your API, or a service like Formspree/Netlify Forms/EmailJS).
-10. **Favicon & OG image — action required for social sharing** — `assets/icons/favicon.svg` works fine as a favicon, but `assets/images/og-image.svg` should be replaced with a real **1200×630 PNG or JPG**. Most social platforms (Facebook, LinkedIn, WhatsApp, X/Twitter) do not render SVG for link-preview images, so until this is swapped, shared links will show no preview image. Update the `og:image` and `twitter:image` meta tags on every page to point at the new file.
+1. **Doctor profile** — `about.html` / `index.html` have a bracketed note where Dr. Amit Kumar's experience summary can be added. Add only verified details (years of experience, registration number, special interests). Do not add unverified credentials or claims.
+2. **Procedure lists** — `services.html` has `[Confirm ...]` notes on General Surgery, Laparoscopic Surgery and Diagnostics. Replace with the exact procedures the hospital performs.
+3. **Facilities marked "To Confirm"** — in `facilities.html`: Pharmacy, Laboratory / Diagnostics, Ambulance. Mark each Available or remove the card.
+4. **OPD timings** — currently shown as "call to confirm" on the Contact page and FAQ. Add real OPD days/hours per doctor if they are fixed.
+5. **Google Maps** — `contact.html` uses a maps *search* embed (no API key needed) pointing at the hospital address. Once the hospital has a Google Business Profile, replace the `<iframe src="...">` with the exact "Embed a map" URL, and set the real `geo` latitude/longitude in the `contact.html` and `index.html` JSON-LD (currently an approximate Dalsinghsarai coordinate).
+6. **Appointment form delivery** — the form in `contact.html` posts to [Web3Forms](https://web3forms.com) using a placeholder `access_key`. Create a free Web3Forms key for the hospital's email address and replace the value in the hidden `access_key` field, or wire `initAppointmentForm()` in `assets/js/main.js` to another service.
+7. **Logo, favicon & OG image** — the HTML now references raster files that must be added:
+   - `assets/icons/logo.png` — header + footer mark (use the square emblem version; square, ideally 256px+).
+   - `assets/icons/favicon.png` — browser-tab icon (same emblem; square, 48–256px). Optionally also add `favicon.ico` at the site root.
+   - `assets/images/og-image.png` — social-share image (the full round seal works; a 1200×630 version is ideal but not required).
+   Until these files exist the logo/favicon/preview will be broken. The old `.svg` placeholders in `assets/icons/` are now unused and can be deleted.
+8. **Real photos** — replace the placeholder SVGs in `assets/images/` (see *Replacing Images* below).
+9. **Google Search Console** — after GitHub Pages is live, verify the property `https://niord-pharma.github.io/khushi-hospital/` and submit `https://niord-pharma.github.io/khushi-hospital/sitemap.xml` directly (robots.txt auto-discovery does not work on a project subpath). Create a Google Business Profile for local search.
 
 ## Replacing Images
 

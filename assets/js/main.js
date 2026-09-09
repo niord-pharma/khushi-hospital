@@ -1,5 +1,5 @@
 /*
-  Sunrise Multispecialty Clinic — main.js
+  Khushi Hospital & Laparoscopy Centre — main.js
   Vanilla JS only. No dependencies.
   Sections: Header/Nav, Reveal on scroll, Back to top, FAQ accordion,
             Gallery lightbox, Appointment form validation, Footer year.
@@ -203,13 +203,13 @@
   }
 
   /* ---------- Appointment / Enquiry Form ---------- */
-  // TODO (developer): clinic's WhatsApp number, digits only with country code (matches the wa.me links used elsewhere on the site).
-  var CLINIC_WHATSAPP_NUMBER = "919885131390";
+  // Hospital WhatsApp number, digits only with country code (matches the wa.me links used elsewhere on the site).
+  var CLINIC_WHATSAPP_NUMBER = "919934255831";
   var WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
   function buildAppointmentMessage(values) {
     var lines = [
-      "New Appointment Enquiry - Sunrise Clinic",
+      "New Appointment Enquiry - Khushi Hospital & Laparoscopy Centre",
       "Name: " + values.name,
       "Phone: " + values.phone
     ];
