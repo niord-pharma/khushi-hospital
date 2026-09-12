@@ -1,0 +1,24 @@
+{
+  "name": "Khushi Hospital & Laparoscopy Centre",
+  "short_name": "Khushi Hospital",
+  "description": "General & laparoscopic surgery, maternity care and 24/7 emergency services in Dalsinghsarai, Samastipur.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f6e6a",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
