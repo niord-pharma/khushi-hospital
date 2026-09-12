@@ -72,7 +72,7 @@ Search the HTML files for `[` (square-bracket notes) and `To Confirm` to find ev
 3. **Facilities marked "To Confirm"** — in `facilities.html`: Pharmacy, Laboratory / Diagnostics, Ambulance. Mark each Available or remove the card.
 4. **OPD timings** — currently shown as "call to confirm" on the Contact page and FAQ. Add real OPD days/hours per doctor if they are fixed.
 5. **Google Maps** — `contact.html` uses a maps *search* embed (no API key needed) pointing at the hospital address. Once the hospital has a Google Business Profile, replace the `<iframe src="...">` with the exact "Embed a map" URL, and set the real `geo` latitude/longitude in the `contact.html` and `index.html` JSON-LD (currently an approximate Dalsinghsarai coordinate).
-6. **Appointment form delivery** — the form in `contact.html` posts to [Web3Forms](https://web3forms.com) using a placeholder `access_key`. Create a free Web3Forms key for the hospital's email address and replace the value in the hidden `access_key` field, or wire `initAppointmentForm()` in `assets/js/main.js` to another service.
+6. ~~**Appointment form delivery**~~ — done. The form in `contact.html` posts to [Web3Forms](https://web3forms.com) with a live `access_key` tied to the hospital's email.
 7. **Logo, favicon & OG image** — the HTML now references raster files that must be added:
    - `assets/icons/logo.png` — header + footer mark (use the square emblem version; square, ideally 256px+).
    - `assets/icons/favicon.png` — browser-tab icon (same emblem; square, 48–256px). Optionally also add `favicon.ico` at the site root.
