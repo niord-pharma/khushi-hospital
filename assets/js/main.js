@@ -4,6 +4,15 @@
   Sections: Header/Nav, Reveal on scroll, Back to top, FAQ accordion,
             Gallery lightbox, Appointment form validation, Footer year.
 */
+/* ---------- Offline support (service worker) ---------- */
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {
+      // Offline caching is a progressive enhancement; ignore registration failures.
+    });
+  });
+}
+
 (function () {
   "use strict";
 
