@@ -111,6 +111,15 @@ Design tokens (colors, spacing, radii, shadows) live at the top of `assets/css/s
 - `IntersectionObserver` powers scroll-reveal animations with a plain-CSS fallback for unsupported browsers.
 - Respects `prefers-reduced-motion`.
 
+## Offline Support (PWA)
+
+`sw.js` is a service worker that pre-caches every page and asset (CSS, JS, icons, images, and the Google Fonts/Font Awesome CDN files once fetched once) on first visit. After that, the site keeps working with no internet connection — useful given patchy connectivity in the area — and `manifest.json` lets visitors "Add to Home Screen" for an app-like icon.
+
+- Registered from `assets/js/main.js`, so every page picks it up automatically. Registration is wrapped in a feature check and a silent `.catch()`, so it's a no-op (not an error) on browsers without service worker support or when the site is opened directly via `file://` (service workers require `http(s)`).
+- Page loads use network-first (fresh content when online, cached copy when offline); other assets use cache-first with a background refresh.
+- **When you change any site file, bump `CACHE_VERSION` in `sw.js`** so returning visitors get the update instead of a stale cached copy. If you add/rename/remove a file, also update the `PRECACHE_PATHS` list in `sw.js`.
+- Works at a domain root or a GitHub Pages subpath, since it's registered and builds all cache URLs relative to the page/scope rather than absolute paths.
+
 ## Deployment
 
 This is a fully static site — drag-and-drop the folder onto Netlify/Vercel, or push to a GitHub repo and enable GitHub Pages (serve from the repository root).
