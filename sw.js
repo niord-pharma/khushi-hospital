@@ -6,7 +6,7 @@
 */
 "use strict";
 
-var CACHE_VERSION = "v1";
+var CACHE_VERSION = "v2";
 var CACHE_NAME = "khushi-hospital-" + CACHE_VERSION;
 
 var PRECACHE_PATHS = [
